@@ -26,8 +26,28 @@
   <button type="submit" class="btn btn-info" onclick="getblynk()">Tekan Sayala!</button>
 </div>
 
+<div class="container">
+<<<<<<< HEAD
+  <button type="submit" class="btn btn-info" onclick="getblynk()">Saya Button Ke Dua!</button>
+</div>
+
+=======
+  <h1>Button for Sahar</h1>
+  <button type="submit" class="btn btn-info" onclick="getblynk()">Tekan Sayala!</button>
+</div>
+
+
+>>>>>>> 2627af9d628f1e5a9161b6b069a8b50a687e1129
 <script>
   function getblynk(){
+  $.get("https://blynk.cloud/external/api/update?token=rKOgUiuZz1yriWCRxr183nzBE7W77iXB&V1=0", (data, status) => {
+    console.log(data);
+  });
+  }
+</script>
+
+<script>
+  function getblynksahar(){
   $.get("https://blynk.cloud/external/api/update?token=rKOgUiuZz1yriWCRxr183nzBE7W77iXB&V1=0", (data, status) => {
     console.log(data);
   });
