@@ -71,7 +71,7 @@
     
     async function fetchData() {
       try {
-        const response = await fetch(`http://blynk-cloud.com/${authToken}/get/${pin}`);
+        const response = await fetch(`https://sgp1.blynk.cloud/external/api/get?token=GJlhhQ8dTx9rZzM-TxdV2JgvjRwBKFfz&v6`);
         const data = await response.json();
         const value = parseInt(data[0], 10);
         gauge.refresh(value);
