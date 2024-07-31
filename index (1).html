@@ -29,6 +29,7 @@
   <h1 style="text-align: center;">Button for Emergency</h1>
   <button type="submit" class="btn btn-info" onclick="getblynkbella()">EMERGENCY</button>
   <button type="submit" class="btn btn-info" onclick="getblynksahar()">MELEKAT</button>
+  <button type="submit" class="btn btn-info" onclick="getblynkdayah()">RELEASE</button>
   <button type="submit" class="btn btn-info" onclick="getblynkiskandar()">RESET</button>
 
 </div>
@@ -45,6 +46,14 @@
 <script>
   function getblynksahar(){
   $.get("https://sgp1.blynk.cloud/external/api/update?token=GJlhhQ8dTx9rZzM-TxdV2JgvjRwBKFfz&v1=1", (data, status) => {
+    console.log(data);
+  });
+  }
+</script>
+
+<script>
+  function getblynkdayah(){
+  $.get("https://sgp1.blynk.cloud/external/api/update?token=GJlhhQ8dTx9rZzM-TxdV2JgvjRwBKFfz&v1=0", (data, status) => {
     console.log(data);
   });
   }
