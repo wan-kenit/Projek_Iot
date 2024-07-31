@@ -88,16 +88,16 @@
     setInterval(fetchData, 1000); // Fetch data every second
   </script>
     
-  <div id="ultrasonic" style="width:300px; height:200px;"></div>
-    <script>
-     const authToken = 'GJlhhQ8dTx9rZzM-TxdV2JgvjRwBKFfz';
+  <div id="ultrasonic" style="width:200px; height:200px;"></div>
+  <script>
+    const authToken = 'GJlhhQ8dTx9rZzM-TxdV2JgvjRwBKFfz';
     const pin = 'V5'; // Replace with your virtual pin
     
     const gauge = new JustGage({
       id: 'ultrasonic',
       value: 0,
       min: 0,
-      max: 40,
+      max: 100,
       title: 'Blynk Gauge'
     });
     
@@ -115,7 +115,7 @@
     }
     
     setInterval(fetchData, 1000); // Fetch data every second
- </script>
+  </script>
 
 
 <footer>
