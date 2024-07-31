@@ -27,8 +27,8 @@
 <h1 style="font-size:60px;text-align:center;background-color: lightgray;padding: 10px;" >FaceSafe Sentinel</h1>
 <div class="container">
   <h1 style="text-align: center;">Button for Emergency</h1>
-  <button type="submit" class="btn btn-info" onclick="getblynkbella()">MAGNETIC</button>
-  <button type="submit" class="btn btn-info" onclick="getblynksahar()">EMERGENCY</button>
+  <button type="submit" class="btn btn-info" onclick="getblynkbella()">EMERGENCY</button>
+  <button type="submit" class="btn btn-info" onclick="getblynksahar()">MELEKAT</button>
   <button type="submit" class="btn btn-info" onclick="getblynkiskandar()">RESET</button>
 
 </div>
@@ -44,7 +44,7 @@
 
 <script>
   function getblynksahar(){
-  $.get("https://sgp1.blynk.cloud/external/api/get?token=GJlhhQ8dTx9rZzM-TxdV2JgvjRwBKFfz&v0", (data, status) => {
+  $.get("https://sgp1.blynk.cloud/external/api/get?token=GJlhhQ8dTx9rZzM-TxdV2JgvjRwBKFfz&v1=1", (data, status) => {
     console.log(data);
   });
   }
